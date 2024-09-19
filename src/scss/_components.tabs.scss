@@ -1,0 +1,55 @@
+.c-tabs {
+	align-items: stretch;
+	justify-content: space-evenly;
+	background-color: $color-accent;
+	margin-bottom: 3rem;
+
+	&__item {
+		flex: 1 1 auto;
+	}
+
+	&__link {
+		padding: 2rem 1.5rem;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		color: $color-white;
+		height: 100%;
+		transition: all 0.3s ease;
+
+		@include media-breakpoint-down(md) {
+			flex-direction: row;
+			justify-content: center;
+			padding: 0.8rem;
+		}
+
+		&:hover,
+		&.active {
+			background-color: $color-highlight;
+			text-decoration: none;
+			color: $color-white;
+		}
+	}
+
+	&__img {
+		width: 6.25rem;
+
+		@include media-breakpoint-down(md) {
+			max-width: 3rem;
+			margin-right: 1rem;
+		}
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-weight: $fw-regular;
+		font-size: 1rem;
+		margin-bottom: 0;
+
+		@include media-breakpoint-down(md) {
+			font-size: 0.8rem;
+		}
+	}
+}

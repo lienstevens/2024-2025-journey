@@ -1,0 +1,49 @@
+.c-btn {
+	text-transform: uppercase;
+	padding: 0.5rem 1.5rem;
+	transition: all 0.2s ease;
+	display: inline-block;
+	margin-bottom: 1rem;
+	font-weight: $fw-regular;
+	outline: none;
+	border: none;
+
+	@include btn-color;
+
+	&:hover {
+		@include btn-color($color-highlight, $color-white);
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&--down {
+		border-radius: 50%;
+		padding: 0;
+		width: 3rem;
+		height: 3rem;
+		line-height: 3rem;
+		font-size: 1.5rem;
+
+		&:hover {
+			transform: translateY(0.5rem);
+		}
+	}
+
+	&--light-accent {
+		@include btn-color($color-white, $color-accent);
+
+		&:hover {
+			@include btn-color($color-highlight, $color-white);
+		}
+	}
+
+	&--light-highlight {
+		@include btn-color($color-white, $color-highlight);
+
+		&:hover {
+			@include btn-color($color-accent, $color-white);
+		}
+	}
+}

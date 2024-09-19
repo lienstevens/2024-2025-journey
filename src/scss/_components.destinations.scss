@@ -1,0 +1,81 @@
+.c-destinations {
+	&__item {
+		display: flex;
+		background-color: $color-light;
+		min-height: 12rem;
+		position: relative;
+		justify-content: space-between;
+
+		@include media-breakpoint-down(lg) {
+			flex-direction: column;
+			height: 100%;
+		}
+	}
+
+	&__img {
+		object-fit: cover;
+		max-height: 12rem;
+		aspect-ratio: 551 / 369;
+
+		@include media-breakpoint-down(sm) {
+			max-height: 100%;
+		}
+	}
+
+	&__description {
+		padding: 1.5rem 1.5rem 0;
+		align-self: center;
+
+		@include media-breakpoint-down(sm) {
+			position: absolute;
+			background-color: rgba($color-dark-rgb, 0.3);
+			height: calc(100% - 4.75rem);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 1rem;
+			color: $color-white;
+			text-shadow: 1px 1px 4px rgba($color-dark-rgb, 0.5);
+		}
+	}
+
+	&__title {
+		@include media-breakpoint-down(md) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__subtitle {
+		@include media-breakpoint-down(sm) {
+			color: $color-white;
+		}
+	}
+
+	&__price {
+		background-color: $color-accent;
+		color: $color-white;
+		min-width: 12rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&:hover {
+			text-decoration: none;
+			background-color: $color-highlight;
+			color: $color-white;
+		}
+
+		strong {
+			font-size: 1.5rem;
+			font-weight: $fw-bold;
+			margin-bottom: 1rem;
+		}
+
+		@include media-breakpoint-down(md) {
+			padding: 1rem 2.5rem 0.5rem;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+}

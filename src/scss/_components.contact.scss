@@ -1,0 +1,15 @@
+.c-contact {
+    margin-top: 4rem;
+
+    &__age {
+        max-width: 6rem;
+    }
+
+    &__question {
+        height: 10rem !important;
+    }
+
+    &__optional {
+        font-size: .75rem;
+    }
+}

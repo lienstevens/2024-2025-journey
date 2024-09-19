@@ -1,0 +1,57 @@
+.c-places {
+	background-color: $color-light;
+	padding-top: 4rem;
+
+	&__item {
+		position: relative;
+
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 3rem;
+		}
+
+		&:nth-child(odd) {
+			flex-direction: row-reverse;
+
+			@include media-breakpoint-up(lg) {
+				.c-places__description {
+					margin-right: -5rem;
+					margin-left: 0;
+				}
+			}
+			.c-places__description {
+				background-color: $color-highlight;
+
+				@include media-breakpoint-down(md) {
+					background-color: rgba($color-highlight-rgb, 0.8);
+				}
+			}
+		}
+	}
+
+	&__img {
+		height: 100%;
+		min-height: 24rem;
+		object-fit: cover;
+	}
+
+	&__description {
+		background-color: $color-accent;
+		color: $color-white;
+		padding: 2rem;
+		position: relative;
+
+		@include media-breakpoint-up(md) {
+			height: 100%;
+		}
+
+		@include media-breakpoint-up(lg) {
+			margin-left: -5rem;
+		}
+
+		@include media-breakpoint-down(md) {
+			position: absolute;
+			background-color: rgba($color-accent-rgb, 0.8);
+			bottom: 0;
+		}
+	}
+}

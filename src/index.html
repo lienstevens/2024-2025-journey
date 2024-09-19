@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend - Journey</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+    <nav class="js-nav-container c-nav">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-9 col-lg-4">
+                    <a class="c-logo" href="#top">
+                        <svg class="c-logo__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.62 52.08">
+                            <polygon class="c-logo__polygon c-logo__polygon--left" fill="none" points="37.02,9.29 19.41,38.62 8.13,38.66 31.33,0 " />
+                            <polygon class="c-logo__polygon c-logo__polygon--right" fill="none" points="33.7,22.69 51.33,52.05 62.62,52.08 39.42,13.42 " />
+                            <polygon class="c-logo__polygon c-logo__polygon--bottom" fill="none" points="40.09,42.44 5.85,42.41 0,52.06 45.91,52.08 " />
+                        </svg>
+                        Journey
+                    </a>
+                </div>
+                <div class="col-3 col-lg-8">
+                    <div class="c-nav__container js-nav">
+                        <input type="checkbox" class="c-nav__toggle">
+                        <span class="c-nav__bar c-nav__bar--top"></span>
+                        <span class="c-nav__bar c-nav__bar--mid"></span>
+                        <span class="c-nav__bar c-nav__bar--bottom"></span>
+                        <div class="c-nav__linecontainer">
+                            <ul class="c-nav__list">
+                                <li class="c-nav__item js-item js-active c-nav__item--active">
+                                    <a class="c-nav__link js-link" href="#home">Home</a>
+                                </li>
+                                <li class="c-nav__item js-item">
+                                    <a class="c-nav__link js-link" href="#places">Places</a>
+                                </li>
+                                <li class="c-nav__item js-item">
+                                    <a class="c-nav__link js-link" href="#destinations">Top Destinations</a>
+                                </li>
+                                <li class="c-nav__item js-item">
+                                    <a class="c-nav__link js-link" href="#categories">Categories</a>
+                                </li>
+                                <li class="c-nav__item js-item">
+                                    <a class="c-nav__link js-link" href="#contact">Contact Us</a>
+                                </li>
+                            </ul>
+                            <div class="c-nav__line js-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header data-navsection="home" id="home" class="js-section">
+        <div class="container">
+            <h1>Let's begin</h1>
+            <h2>We assist you to choose the best.</h2>
+            <a href="#intro" class="c-btn c-btn--down"><i class="bi bi-caret-down-fill"></i></a>
+        </div>
+    </header>
+    <main>
+        <section data-navsection="home" id="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 col-xxl-6 offset-xxl-3 my-5 text-center">
+                        <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> is our priority</h2>
+                        <p class="mb-4">Embark on a voyage of discovery with us. Our passion for <strong>travel</strong> knows no bounds, and we're here to make every moment of your journey truly extraordinary.<br>Whether you seek the thrill of <strong>adventure</strong>, the serenity of <strong>nature</strong>, or the charm of <strong>cultural experiences</strong>, we've got your back.</p>
+                        <a href="#places" class="c-btn">Continue to explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="c-places js-section" data-navsection="places" id="places">
+            <div class="container-xl g-0 g-xl-3">
+                <h2 class="text-center text-uppercase mb-4 mx-1">Visit these <strong>wonderful places</strong></h2>
+                <article class="row g-0 align-items-lg-center c-places__item">
+                    <div class="col-12 col-md-7 col-lg-6">
+                        <picture>
+                            <source media="(min-width: 1400px)" srcset="img/europe-992w.webp 1x, img/europe-1584w.webp 2x" class="img-fluid c-places__img">
+                            <source media="(min-width: 1200px)" srcset="img/europe-576w.webp 1x, img/europe-1152w.webp 2x" class="img-fluid c-places__img">
+                            <source media="(min-width: 768px)" srcset="img/europe-576w.webp 1x, img/europe-992w.webp 2x" class="img-fluid c-places__img">
+                            <source media="(max-width: 767px)" srcset="img/europe-992w.webp 1x, img/europe-1584w.webp 2x" class="img-fluid c-places__img">
+                            <img alt="Europe's most visited places" src="img/europe.jpg" srcset="img/europe-992w.webp 1x, img/europe-1584w.webp 2x" class="img-fluid c-places__img">
+                        </picture>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-6">
+                        <div class="c-places__description">
+                            <h2>Europe's most visited places</h2>
+                            <p>Explore the majestic architecture, rich history, or delectable cuisine. Our curated list of must-visit places will guide you through an unforgettable European adventure.</p>
+                            <a href="#" class="c-btn c-btn--light-accent">Continue Reading</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="row g-0 align-items-lg-center c-places__item">
+                    <div class="col-12 col-md-7 col-lg-6">
+                        <img src="img/asia.webp" class="img-fluid c-places__img" alt="Asia's most popular places">
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-6">
+                        <div class="c-places__description">
+                            <h2>Asia's most popular places</h2>
+                            <p> Immerse yourself in the vibrant cultures, stunning landscapes, and ancient traditions that make Asia a must-visit continent. Our selection of Asia's most popular places will inspire your next unforgettable journey.</p>
+                            <a href="#" class="c-btn c-btn--light-highlight">Continue Reading</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="row g-0 align-items-lg-center c-places__item">
+                    <div class="col-12 col-md-7 col-lg-6">
+                        <img src="img/america.webp" class="img-fluid c-places__img" alt="America's most famous places">
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-6">
+                        <div class="c-places__description">
+                            <h2>America's most famous places</h2>
+                            <p>We invite you to explore the heart and soul of this vast and captivating continent. Whether you're captivated by the allure of iconic cityscapes or the untamed beauty of national parks, there's an American adventure waiting just for you.</p>
+                            <a href="#" class="c-btn c-btn--light-accent">Continue Reading</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="js-section" data-navsection="destinations" id="destinations">
+            <ul class="nav c-tabs">
+                <li class="c-tabs__item">
+                    <a href="#North-America" id="North-America-tab" data-bs-toggle="tab" class="c-tabs__link">
+                        <img src="img/na-icon.svg" alt="North-America" class="img-fluid c-tabs__img">
+                        <h3 class="c-tabs__title">North America</h3>
+                    </a>
+                </li>
+                <li class="c-tabs__item">
+                    <a href="#South-America" id="South-America-tab" data-bs-toggle="tab" class="c-tabs__link">
+                        <img src="img/sa-icon.svg" alt="South-America" class="img-fluid c-tabs__img">
+                        <h3 class="c-tabs__title">South America</h3>
+                    </a>
+                </li>
+                <li class="c-tabs__item">
+                    <a href="#Europe" id="Europe-tab" data-bs-toggle="tab" class="c-tabs__link">
+                        <img src="img/europe-icon.svg" alt="Europe" class="img-fluid c-tabs__img">
+                        <h3 class="c-tabs__title">Europe</h3>
+                    </a>
+                </li>
+                <li class="c-tabs__item">
+                    <a href="#Asia" id="Asia-tab" data-bs-toggle="tab" class="c-tabs__link active">
+                        <img src="img/asia-icon.svg" alt="Asia" class="img-fluid c-tabs__img">
+                        <h3 class="c-tabs__title">Asia</h3>
+                    </a>
+                </li>
+                <li class="c-tabs__item">
+                    <a href="#Africa" id="Africa-tab" data-bs-toggle="tab" class="c-tabs__link">
+                        <img src="img/africa-icon.svg" alt="Africa" class="img-fluid c-tabs__img">
+                        <h3 class="c-tabs__title">Africa</h3>
+                    </a>
+                </li>
+                <li class="c-tabs__item">
+                    <a href="#Australia" id="Australia-tab" data-bs-toggle="tab" class="c-tabs__link">
+                        <img src="img/australia-icon.svg" alt="Australia" class="img-fluid c-tabs__img">
+                        <h3 class="c-tabs__title">Australia</h3>
+                    </a>
+                </li>
+                <li class="c-tabs__item">
+                    <a href="#Antarctica" id="Antarctica-tab" data-bs-toggle="tab" class="c-tabs__link">
+                        <img src="img/antarctica-icon.svg" alt="Antarctica" class="img-fluid c-tabs__img">
+                        <h3 class="c-tabs__title">Antarctica</h3>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade c-destinations" id="North-America" role="tabpanel" aria-labelledby="North-America-tab">
+                    <div class="container">
+                        <div class="row gy-5">
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/newjersey.webp" alt="North Garden Resort" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">North Garden Resort</h3>
+                                        <h4 class="c-destinations__subtitle">New Jersey</h4>
+                                        <p>North Garden Resort in New Jersey is your gateway to a peaceful retreat. Our resort provides a serene atmosphere for a rejuvenating escape.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$110</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/alabama.webp" alt="Four Seasons Hotel" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Four Seasons Hotel</h3>
+                                        <h4 class="c-destinations__subtitle">Alabama</h4>
+                                        <p>Experience luxury and comfort at Four Seasons Hotel in Alabama. Our hotel is designed to cater to your every need.</p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$450</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/sanfrancisco.webp" alt="Centre Hotel" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Centre Hotel</h3>
+                                        <h4 class="c-destinations__subtitle">San Francisco</h4>
+                                        <p>Centre Hotel offers a blend of modern elegance and traditional charm. Discover the rich heritage of the region while enjoying top-notch amenities.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$150</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/neworleans.webp" alt="Wyndham" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Wyndham</h3>
+                                        <h4 class="c-destinations__subtitle">New Orleans</h4>
+                                        <p>Wyndham is a haven of relaxation and sophistication. Enjoy our well-appointed rooms and explore the local culture and cuisine.</p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$180</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade c-destinations" id="South-America" role="tabpanel" aria-labelledby="South-America-tab">
+                    <div class="container">
+                        <div class="row gy-5">
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/copacabana.webp" alt="Copacabana Resort" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Copacabana Resort</h3>
+                                        <h4 class="c-destinations__subtitle">Brasil</h4>
+                                        <p>Copacabana Resort provides a tropical paradise for travelers seeking sun, sand, and relaxation.</p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$110</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/chile.webp" alt="Royal Oasis Hotel" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Royal Oasis Hotel</h3>
+                                        <h4 class="c-destinations__subtitle">Chile</h4>
+                                        <p>Indulge in luxury at Royal Oasis Hotel. Our hotel offers world-class amenities and services for a truly memorable stay.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$450</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/peru.webp" alt="Sunset Haven Inn" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Sunset Haven Inn</h3>
+                                        <h4 class="c-destinations__subtitle">Peru</h4>
+                                        <p>Sunset Haven Inn combines modern comforts with local authenticity. Explore the region's attractions and return to a cozy retreat.</p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$150</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/guatemale.webp" alt="Azure Breeze Resort" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Azure Breeze Resort</h3>
+                                        <h4 class="c-destinations__subtitle">Guatemale</h4>
+                                        <p>Discover the charm of Azure Breeze Resort in Guatemale. Immerse yourself in the local culture and unwind in comfortable accommodations.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$180</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade c-destinations" id="Europe" role="tabpanel" aria-labelledby="Europe-tab">
+                    <div class="container">
+                        <div class="row gy-5">
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/belgium.webp" alt="Europe Resort Hotel" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Europe Resort Hotel</h3>
+                                        <h4 class="c-destinations__subtitle">Belgium</h4>
+                                        <p>Europe Resort Hotel in Belgium offers a delightful escape in the heart of Europe. Experience the rich history and culture of the region.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$610</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/barcelona.webp" alt="Seaview Hotel" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Seaview Hotel</h3>
+                                        <h4 class="c-destinations__subtitle">Barcelona, Spain</h4>
+                                        <p>Seaview Hotel in Barcelona, Spain, boasts stunning Mediterranean views and a prime location near the city's attractions.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$490</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/amsterdam.webp" alt="City Hotel" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">City Hotel</h3>
+                                        <h4 class="c-destinations__subtitle">Amsterdam</h4>
+                                        <p>City Hotel in Amsterdam provides a modern and convenient base for your European adventure. Explore the city's vibrant neighborhoods.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$850</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/germany.webp" alt="Swartswald Hotel" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Swartswald Hotel</h3>
+                                        <h4 class="c-destinations__subtitle">Germany</h4>
+                                        <p>Swartswald Hotel in Germany invites you to explore the enchanting Black Forest region. Experience the beauty of nature.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$490</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show active c-destinations" id="Asia" role="tabpanel" aria-labelledby="Asia-tab">
+                    <div class="container">
+                        <div class="row gy-5">
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/singapore.webp" alt="North Garden Resort" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Asia Resort Hotel</h3>
+                                        <h4 class="c-destinations__subtitle">Singapore</h4>
+                                        <p>Asia Resort Hotel in Singapore offers luxurious accommodations with stunning views of the city skyline and easy access to popular attractions.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$610</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/myanmar.webp" alt="North Garden Resort" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Seaview Hotel</h3>
+                                        <h4 class="c-destinations__subtitle">Yangon, Myanmar</h4>
+                                        <p>Seaview Hotel in Yangon, Myanmar, is nestled along the scenic coastline, providing guests with breathtaking ocean views.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$490</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/bangkok.webp" alt="Golden Sands Resort" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Golden Sands Resort</h3>
+                                        <h4 class="c-destinations__subtitle">Bangkok, Thailand</h4>
+                                        <p>Golden Sands Resort in Bangkok, welcomes you with modern amenities and a central location. Explore the vibrant city and the gold beaches.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$850</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/china.webp" alt="North Garden Resort" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Chinese Wall Hotel</h3>
+                                        <h4 class="c-destinations__subtitle">Peking, China</h4>
+                                        <p>Chinese Wall Hotel in Peking, offers a unique experience with its historical surroundings. Explore the Great Wall and return to a comfortable retreat.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$490</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade c-destinations" id="Africa" role="tabpanel" aria-labelledby="Africa-tab">
+                    <div class="container">
+                        <div class="row gy-5">
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/nigeria.webp" alt="Africa Garden Resort" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Africa Garden Resort</h3>
+                                        <h4 class="c-destinations__subtitle">Nigeria</h4>
+                                        <p>Africa Garden Resort in Nigeria offers a unique blend of wildlife and luxury. Stay in the heart of nature and embark on exciting safaris during your stay.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$110</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/kenia.webp" alt="Crystal Waters Resort" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Crystal Waters Resort</h3>
+                                        <h4 class="c-destinations__subtitle">Kenia</h4>
+                                        <p>Experience the magic of the African continent at Crystal Waters Resort in Kenia. Our hotel combines comfort and adventure for an unforgettable stay.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$450</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/gambia.webp" alt="Serene Harbor Inn" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Serene Harbor Inn</h3>
+                                        <h4 class="c-destinations__subtitle">Gambia</h4>
+                                        <p>Serene Harbor Inn provides a gateway to Africa's cultural riches. Immerse yourself in local traditions and enjoy a comfortable retreat.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$150</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/southafrica.webp" alt="Paradise Palms Hotel" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Paradise Palms Hotel</h3>
+                                        <h4 class="c-destinations__subtitle">South Africa</h4>
+                                        <p>Discover the wonders of South Africa at Paradise Palms Hotel. Explore the diverse landscapes and cultures of the continent.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$180</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade c-destinations" id="Australia" role="tabpanel" aria-labelledby="Australia-tab">
+                    <div class="container">
+                        <div class="row gy-5">
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/sydney.webp" alt="Australia Resort Hotel" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Australia Resort Hotel</h3>
+                                        <h4 class="c-destinations__subtitle">Sydney</h4>
+                                        <p>Australia Resort Hotel in Sydney offers a coastal escape with easy access to the city's attractions. Enjoy stunning ocean views and relax in comfortable surroundings.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$610</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/melbourne.webp" alt="Seaview Hotel" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Seaview Hotel</h3>
+                                        <h4 class="c-destinations__subtitle">Melbourne</h4>
+                                        <p>Seaview Hotel in Melbourne provides a seaside retreat with modern amenities. Explore the vibrant city and return to the tranquility of our accommodations.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$490</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/brisbane.webp" alt="Emerald Retreat Hotel" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Emerald Retreat Hotel</h3>
+                                        <h4 class="c-destinations__subtitle">Brisbane</h4>
+                                        <p>Emerald Retreat Hotel in Brisbane offers a stylish urban experience. Discover the city's cultural scene and unwind in our well-appointed rooms.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$850</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/perth.webp" alt="Perth Hotel" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Perth Hotel</h3>
+                                        <h4 class="c-destinations__subtitle">Perth</h4>
+                                        <p>Perth Hotel provides a comfortable stay in a thriving city. Explore the local attractions and return to our welcoming accommodations.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$490</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade c-destinations" id="Antarctica" role="tabpanel" aria-labelledby="Antarctica-tab">
+                    <div class="container">
+                        <div class="row gy-5">
+                            <div class="col-12 col-sm-6 col-lg-12 col-xl-10 offset-xl-1">
+                                <article class="c-destinations__item">
+                                    <img src="img/antarctica.webp" alt="Antarctic Cruise" class="img-fluid c-destinations__img">
+                                    <div class="c-destinations__description">
+                                        <h3 class="c-destinations__title">Antarctic Cruise</h3>
+                                        <h4 class="c-destinations__subtitle">Antarctica</h4>
+                                        <p>Embark on an unforgettable Antarctic Cruise and explore the pristine beauty of the frozen continent. Experience the adventure of a lifetime.</p>
+                                    </div>
+                                    <a href="#" class="c-destinations__price">
+                                        <strong>$910</strong>
+                                        <p>More info</p>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="c-categories js-section" data-navsection="categories" id="categories">
+            <div class="container">
+                <div class="row js-category">
+                    <div class="col-12">
+                        <h2 class="text-uppercase text-center mb-4">Our <strong>destinations</strong> contain</h2>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="c-categories__percentage">95&percnt;</div>
+                        <div class="c-categories__bar c-categories__bar--95 js-category__bar"></div>
+                        <div class="c-categories__text">
+                            <h3>Adventure</h3>
+                            <h4>Rafting, Sky diving, ...</h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="c-categories__percentage">85&percnt;</div>
+                        <div class="c-categories__bar c-categories__bar--85 js-category__bar"></div>
+                        <div class="c-categories__text">
+                            <h3>Relaxing</h3>
+                            <h4>Beach, pool, ...</h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="c-categories__percentage">70&percnt;</div>
+                        <div class="c-categories__bar c-categories__bar--70 js-category__bar"></div>
+                        <div class="c-categories__text">
+                            <h3>Culture</h3>
+                            <h4>Musea</h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="c-categories__percentage">90&percnt;</div>
+                        <div class="c-categories__bar c-categories__bar--90 js-category__bar"></div>
+                        <div class="c-categories__text">
+                            <h3>Food</h3>
+                            <h4>Local restaurants</h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="c-categories__percentage">80&percnt;</div>
+                        <div class="c-categories__bar c-categories__bar--80 js-category__bar"></div>
+                        <div class="c-categories__text">
+                            <h3>Nature</h3>
+                            <h4>Parks, desert, jungle, ...</h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="c-categories__percentage">65&percnt;</div>
+                        <div class="c-categories__bar c-categories__bar--65 js-category__bar"></div>
+                        <div class="c-categories__text">
+                            <h3>City trips</h3>
+                            <h4>Shopping, landmarks, ...</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="c-photos js-photos">
+            <div class="c-photos__item"><img src="img/alabama.webp" alt="travel" class="img-fluid c-photos__img"></div>
+            <div class="c-photos__item"><img src="img/america.webp" alt="travel" class="img-fluid c-photos__img"></div>
+            <div class="c-photos__item"><img src="img/amsterdam.webp" alt="travel" class="img-fluid c-photos__img"></div>
+            <div class="c-photos__item"><img src="img/antarctica.webp" alt="travel" class="img-fluid c-photos__img"></div>
+            <div class="c-photos__item"><img src="img/asia.webp" alt="travel" class="img-fluid c-photos__img"></div>
+            <div class="c-photos__item"><img src="img/bangkok.webp" alt="travel" class="img-fluid c-photos__img"></div>
+            <div class="c-photos__item"><img src="img/barcelona.webp" alt="travel" class="img-fluid c-photos__img"></div>
+            <div class="c-photos__item"><img src="img/belgium.webp" alt="travel" class="img-fluid c-photos__img"></div>
+            <div class="c-photos__item"><img src="img/brisbane.webp" alt="travel" class="img-fluid c-photos__img"></div>
+        </section>
+        <section class="c-contact js-section" data-navsection="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 col-md-10 m-auto">
+                        <h2 class="text-center text-uppercase">
+                            <strong>Contact</strong> us
+                        </h2>
+                        <h5 class="text-center mb-4">Get info about our <strong>destinations</strong></h5>
+                        <form action="#" class="js-validate">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Jane Doe" required minlength="2" name="name">
+                                <label for="name">Name</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please provide a name.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="number" min="18" max="100" class="form-control c-contact__age" id="age" placeholder="32" required name="age">
+                                <label for="age">Age</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please provide your age (+18).
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required name="email">
+                                <label for="email">Email address</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please provide a correct email address.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel" name="phonenumber" class="form-control" placeholder="0********" pattern="^\d{9,10}$" title="phonenumber" id="phone">
+                                <label for="phone">
+                                    Phonenumber <span class="c-contact__optional">(optional)</span>
+                                </label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please provide a correct phonenumber.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea name="question" class="form-control c-contact__question" placeholder="Question" id="question"></textarea>
+                                <label for="question">
+                                    How can we help you further? <span class="c-contact__optional">(optional)</span>
+                                </label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please provide a question.
+                                </div>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" name="agree" id="agree" required>
+                                <label class="form-check-label" for="agree">
+                                    I have read the terms of agreement
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                            <button type="submit" class="c-btn js-submit-btn w-100">Get your info</button>
+                        </form>
+                        <div class="js-submit-animation u-hide"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024-2025 WDD - Front-end</p>
+                    <label class="c-toggle">
+                        Dark Mode
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox">
+                        <span class="c-toggle__switch"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

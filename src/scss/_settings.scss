@@ -1,0 +1,73 @@
+:root {
+	--color-dark: black;
+	--color-light: #fefefe;
+	--color-base--light: #e6e6e6;
+	--color-base--xlight: #f5f6f6;
+	--color-accent: #69c6ba;
+	--color-highlight: #c66995;
+	--color-warning: #f44336;
+	--color-white: #ffffff;
+	--color-dark-rgb: 0, 0, 0;
+	--color-accent-rgb: 105, 198, 186;
+	--color-highlight-rgb: 198, 105, 149;
+}
+
+.o-darkmode {
+	--color-dark: white;
+	--color-light: black;
+	--color-base--light: #363636;
+	--color-base--xlight: #272727;
+}
+
+$color-dark: var(--color-dark);
+$color-light: var(--color-light);
+$color-base--light: var(--color-base--light);
+$color-base--xlight: var(--color-base--xlight);
+$color-accent: var(--color-accent);
+$color-highlight: var(--color-highlight);
+$color-warning: var(--color-warning);
+$color-white: var(--color-white);
+$color-dark-rgb: var(--color-dark-rgb);
+$color-accent-rgb: var(--color-accent-rgb);
+$color-highlight-rgb: var(--color-highlight-rgb);
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 600;
+$fw-bold: 700;
+
+$photoFadeInDelay: 0.1s;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+	xxxl: 1700px,
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1320px,
+	xxxl: 1600px,
+);
+
+$input-bg: $color-light;
+$input-border-radius: 0;
+$input-border-color: $color-light;
+$input-focus-border-color: $color-accent;
+$input-focus-box-shadow: none;
+
+@mixin btn-color($bg: $color-accent, $color: $color-white) {
+	background-color: $bg;
+	color: $color;
+}
+
+@function calculate-animation-delay($index, $delay: $photoFadeInDelay) {
+	@return $index * $delay;
+}

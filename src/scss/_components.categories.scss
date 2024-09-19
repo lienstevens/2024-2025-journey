@@ -1,0 +1,49 @@
+$bars: (
+	95: 0.2s,
+	85: 0.4s,
+	70: 0.6s,
+	90: 0.8s,
+	80: 1s,
+	65: 1.2s,
+);
+
+.c-categories {
+	background-color: $color-light;
+	padding: 6rem 0 0;
+	margin-top: 4rem;
+
+	&__percentage {
+		font-size: 2rem;
+		font-weight: 700;
+	}
+
+	&__bar {
+		height: 0.4rem;
+		background-color: rgba($color-accent-rgb, 0.2);
+		margin: 1.5rem auto;
+		position: relative;
+
+		@each $percentage, $delay in $bars {
+			&--#{$percentage} {
+				&::after {
+					transition: width 0.3s $delay;
+					content: '';
+					height: 0.4rem;
+					background-color: $color-accent;
+					position: absolute;
+					width: 0;
+				}
+				.c-categories__animate & {
+					&::after {
+						width: ($percentage * 1%);
+						transition: width 0.3s $delay;
+					}
+				}
+			}
+		}
+	}
+
+	&__text {
+		margin-bottom: 8rem;
+	}
+}

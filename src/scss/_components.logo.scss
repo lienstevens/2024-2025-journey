@@ -1,0 +1,40 @@
+.c-logo {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: $fw-bold;
+    color: $color-dark;
+
+    &__svg {
+        max-width: 3.75rem;
+        height: auto;
+
+        .c-nav--active &{
+            max-width: 2.5rem;
+        }
+    }
+
+    &__polygon {
+        fill: $color-accent;
+        transition: fill .6s;
+
+        &--right {
+            transition-delay: .2s;
+        }
+
+        &--bottom {
+            transition-delay: .5s;
+        }
+    }
+
+    &:hover {
+        color: $color-dark;
+
+        .c-logo__polygon {
+            fill: $color-highlight;
+        }
+    }
+
+    .c-nav--active &{
+        font-size: 1.5rem;
+    }
+}
