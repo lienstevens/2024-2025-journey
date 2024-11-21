@@ -63,11 +63,3 @@ $input-border-color: $color-light;
 $input-focus-border-color: $color-accent;
 $input-focus-box-shadow: none;
 
-@mixin btn-color($bg: $color-accent, $color: $color-white) {
-	background-color: $bg;
-	color: $color;
-}
-
-@function calculate-animation-delay($index, $delay: $photoFadeInDelay) {
-	@return $index * $delay;
-}

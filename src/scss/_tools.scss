@@ -10,3 +10,13 @@
 		filter: hue-rotate(0deg);
 	}
 }
+
+
+@mixin btn-color($bg: $color-accent, $color: $color-white) {
+	background-color: $bg;
+	color: $color;
+}
+
+@function calculate-animation-delay($index, $delay: $photoFadeInDelay) {
+	@return $index * $delay;
+}
