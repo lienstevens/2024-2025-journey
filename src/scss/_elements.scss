@@ -1,9 +1,11 @@
+@use 'settings';
+
 body {
 	font-size: 1rem;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	font-weight: $fw-light;
-	background: $color-base--light;
-	color: $color-dark;
+	font-weight: settings.$fw-light;
+	background: settings.$color-base--light;
+	color: settings.$color-dark;
 }
 
 a {
@@ -30,25 +32,25 @@ h2 {
 h3 {
 	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
-	font-weight: $fw-medium;
+	font-weight: settings.$fw-medium;
 	text-transform: uppercase;
 	padding: 0;
 }
 
 h4 {
-	color: $color-highlight;
+	color: settings.$color-highlight;
 	padding: 0;
 	margin-bottom: 1.2rem;
 	font-size: 1rem;
 }
 
 header {
-	background-image: linear-gradient(rgba($color-dark-rgb, 0.7), rgba($color-dark-rgb, 0.7)), url('../img/banner.webp');
+	background-image: linear-gradient(rgba(settings.$color-dark-rgb, 0.7), rgba(settings.$color-dark-rgb, 0.7)), url('../img/banner.webp');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 45rem;
-	color: $color-white;
+	color: settings.$color-white;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -58,7 +60,7 @@ header {
 }
 
 footer {
-	background-color: $color-light;
+	background-color: settings.$color-light;
 	padding: 2rem 0;
 	margin-top: 4rem;
 	font-size: 0.8rem;

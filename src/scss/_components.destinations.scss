@@ -1,7 +1,9 @@
+@use 'settings';
+
 .c-destinations {
 	&__item {
 		display: flex;
-		background-color: $color-light;
+		background-color: settings.$color-light;
 		min-height: 12rem;
 		position: relative;
 		justify-content: space-between;
@@ -28,14 +30,14 @@
 
 		@include media-breakpoint-down(sm) {
 			position: absolute;
-			background-color: rgba($color-dark-rgb, 0.3);
+			background-color: rgba(settings.$color-dark-rgb, 0.3);
 			height: calc(100% - 4.75rem);
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			padding: 1rem;
-			color: $color-white;
-			text-shadow: 1px 1px 4px rgba($color-dark-rgb, 0.5);
+			color: settings.$color-white;
+			text-shadow: 1px 1px 4px rgba(settings.$color-dark-rgb, 0.5);
 		}
 	}
 
@@ -47,13 +49,13 @@
 
 	&__subtitle {
 		@include media-breakpoint-down(sm) {
-			color: $color-white;
+			color: settings.$color-white;
 		}
 	}
 
 	&__price {
-		background-color: $color-accent;
-		color: $color-white;
+		background-color: settings.$color-accent;
+		color: settings.$color-white;
 		min-width: 12rem;
 		display: flex;
 		flex-direction: column;
@@ -62,13 +64,13 @@
 
 		&:hover {
 			text-decoration: none;
-			background-color: $color-highlight;
-			color: $color-white;
+			background-color: settings.$color-highlight;
+			color: settings.$color-white;
 		}
 
 		strong {
 			font-size: 1.5rem;
-			font-weight: $fw-bold;
+			font-weight: settings.$fw-bold;
 			margin-bottom: 1rem;
 		}
 

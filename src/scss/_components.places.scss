@@ -1,5 +1,7 @@
+@use 'settings';
+
 .c-places {
-	background-color: $color-light;
+	background-color: settings.$color-light;
 	padding-top: 4rem;
 
 	&__item {
@@ -19,10 +21,10 @@
 				}
 			}
 			.c-places__description {
-				background-color: $color-highlight;
+				background-color: settings.$color-highlight;
 
 				@include media-breakpoint-down(md) {
-					background-color: rgba($color-highlight-rgb, 0.8);
+					background-color: rgba(settings.$color-highlight-rgb, 0.8);
 				}
 			}
 		}
@@ -35,8 +37,8 @@
 	}
 
 	&__description {
-		background-color: $color-accent;
-		color: $color-white;
+		background-color: settings.$color-accent;
+		color: settings.$color-white;
 		padding: 2rem;
 		position: relative;
 
@@ -50,7 +52,7 @@
 
 		@include media-breakpoint-down(md) {
 			position: absolute;
-			background-color: rgba($color-accent-rgb, 0.8);
+			background-color: rgba(settings.$color-accent-rgb, 0.8);
 			bottom: 0;
 		}
 	}

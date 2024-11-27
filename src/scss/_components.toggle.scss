@@ -1,3 +1,5 @@
+@use 'settings';
+
 .c-toggle {
     cursor: pointer;
 
@@ -5,7 +7,7 @@
         display: none;
     
         &:checked + .c-toggle__switch {
-            background-color: $color-accent;
+            background-color: settings.$color-accent;
     
             &::after {
                 left: 1.25rem;
@@ -17,7 +19,7 @@
         width: 2.5rem;
         height: 1.5rem;
         border-radius: 1rem;
-        background-color: $color-base--light;
+        background-color: settings.$color-base--light;
         display: inline-block;
         position: relative;
         transition: background-color 0.3s;
@@ -26,7 +28,7 @@
 
         &::after {
             content: "";
-            background-color: $color-light;
+            background-color: settings.$color-light;
             border-radius: 50%;
             width: 1rem;
             height: 1rem;

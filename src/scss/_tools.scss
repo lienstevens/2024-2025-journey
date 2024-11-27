@@ -1,3 +1,5 @@
+@use 'settings';
+
 @keyframes photoFadeIn {
 	from {
 		opacity: 0;
@@ -12,11 +14,11 @@
 }
 
 
-@mixin btn-color($bg: $color-accent, $color: $color-white) {
+@mixin btn-color($bg: settings.$color-accent, $color: settings.$color-white) {
 	background-color: $bg;
 	color: $color;
 }
 
-@function calculate-animation-delay($index, $delay: $photoFadeInDelay) {
+@function calculate-animation-delay($index, $delay: settings.$photoFadeInDelay) {
 	@return $index * $delay;
 }

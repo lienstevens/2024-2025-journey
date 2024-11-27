@@ -1,7 +1,9 @@
+@use 'settings';
+
 .c-tabs {
 	align-items: stretch;
 	justify-content: space-evenly;
-	background-color: $color-accent;
+	background-color: settings.$color-accent;
 	margin-bottom: 3rem;
 
 	&__item {
@@ -15,7 +17,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
-		color: $color-white;
+		color: settings.$color-white;
 		height: 100%;
 		transition: all 0.3s ease;
 
@@ -27,9 +29,9 @@
 
 		&:hover,
 		&.active {
-			background-color: $color-highlight;
+			background-color: settings.$color-highlight;
 			text-decoration: none;
-			color: $color-white;
+			color: settings.$color-white;
 		}
 	}
 
@@ -44,7 +46,7 @@
 
 	&__title {
 		text-transform: uppercase;
-		font-weight: $fw-regular;
+		font-weight: settings.$fw-regular;
 		font-size: 1rem;
 		margin-bottom: 0;
 

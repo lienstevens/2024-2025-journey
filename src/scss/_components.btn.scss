@@ -1,17 +1,20 @@
+@use 'settings';
+@use 'tools';
+
 .c-btn {
 	text-transform: uppercase;
 	padding: 0.5rem 1.5rem;
 	transition: all 0.2s ease;
 	display: inline-block;
 	margin-bottom: 1rem;
-	font-weight: $fw-regular;
+	font-weight: settings.$fw-regular;
 	outline: none;
 	border: none;
 
 	@include btn-color;
 
 	&:hover {
-		@include btn-color($color-highlight, $color-white);
+		@include btn-color(settings.$color-highlight, settings.$color-white);
 	}
 
 	&:focus {
@@ -32,18 +35,18 @@
 	}
 
 	&--light-accent {
-		@include btn-color($color-white, $color-accent);
+		@include btn-color(settings.$color-white, settings.$color-accent);
 
 		&:hover {
-			@include btn-color($color-highlight, $color-white);
+			@include btn-color(settings.$color-highlight, settings.$color-white);
 		}
 	}
 
 	&--light-highlight {
-		@include btn-color($color-white, $color-highlight);
+		@include btn-color(settings.$color-white, settings.$color-highlight);
 
 		&:hover {
-			@include btn-color($color-accent, $color-white);
+			@include btn-color(settings.$color-accent, settings.$color-white);
 		}
 	}
 }

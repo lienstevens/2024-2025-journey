@@ -1,5 +1,8 @@
+@use 'settings';
+@use 'generic';
+
 .c-nav {
-	background: $color-light;
+	background: settings.$color-light;
 	padding: 2rem 0;
 	position: fixed;
 	top: 0;
@@ -14,7 +17,7 @@
 		list-style: none;
 		margin-bottom: 0;
 
-		@include media-breakpoint-down(lg) {
+		@include generic.media-breakpoint-down(lg) {
 			transform: translateX(18rem);
 			transition: transform 0.5s ease;
 			position: fixed;
@@ -22,7 +25,7 @@
 			right: 0;
 			width: 18rem;
 			height: 100vh;
-			background-color: rgba($color-dark-rgb, 0.75);
+			background-color: rgba(settings.$color-dark-rgb, 0.75);
 			flex-direction: column;
 			justify-content: flex-start;
 			padding: 6rem 0 0;
@@ -41,21 +44,21 @@
 			margin: 1rem 0;
 
 			&--active .c-nav__link {
-				color: $color-accent;
+				color: settings.$color-accent;
 			}
 		}
 	}
 
 	&__link {
-		color: $color-dark;
-		font-weight: $fw-bold;
+		color: settings.$color-dark;
+		font-weight: settings.$fw-bold;
 
 		@include media-breakpoint-down(lg) {
-			color: $color-white;
+			color: settings.$color-white;
 		}
 
 		&:hover {
-			color: $color-accent;
+			color: settings.$color-accent;
 		}
 	}
 
@@ -105,7 +108,7 @@
 		height: 0.2rem;
 		margin-bottom: 0.3rem;
 		position: relative;
-		background-color: $color-accent;
+		background-color: settings.$color-accent;
 		border-radius: 0.2rem;
 		z-index: 1;
 		transition: transform 0.5s ease, opacity 0.2s ease;
@@ -124,7 +127,7 @@
 	}
 
 	&--active {
-		box-shadow: 0 1px 5px rgba($color-dark-rgb, 0.25);
+		box-shadow: 0 1px 5px rgba(settings.$color-dark-rgb, 0.25);
 		padding: 0.5rem 0;
 	}
 
@@ -135,7 +138,7 @@
 	&__line {
 		width: 1.375rem;
 		height: 0.15rem;
-		background-color: $color-accent;
+		background-color: settings.$color-accent;
 		position: absolute;
 		bottom: 0;
 		left: 0;
